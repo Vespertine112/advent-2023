@@ -32,7 +32,6 @@ int main() {
         for(int i = 0; i < line.length(); i++){
             int left = int(line[i]);
             int right = int(line[line.length()-1-i]);
-
             // First parse check, preempts second check
             if (((left > 47 && left < 58)) && !l){
                 sub += ((left-48)*10);
