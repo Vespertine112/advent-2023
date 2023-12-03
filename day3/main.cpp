@@ -49,6 +49,7 @@ int main() {
                                 valid_number = true;
                             } 
 
+                            // Slightly jerry-rigged lol. Putting all the number-adjacent gear values into a map w/sets (prevent dupes) then check at end if any have 2 values (gear ratio) and calculate
                             if (t_ch == 42){
                                 gears[std::make_pair((i + i_dx),(pt_i + j_dx))].insert(std::stoi(local_num));
                             }
